@@ -35,3 +35,16 @@ kubectl get secret --namespace default my-api-user-secret -o=jsonpath="{.data.to
 ```
 
 The last command will output a long lived JWT you can use for authenticating against the cluster.
+
+## Set env-variables
+In order for the script to work as intended, you need to provide the following env-variables:
+```
+KUBERNETES_TOKEN=
+KUBERNETES_URL=
+AZURE_SUBSCRIPTION_ID=
+AZURE_RESOURCE_GROUP_NAME=
+AZURE_DB_SERVER_NAME=
+AZURE_TENANT_ID=
+AZURE_CLIENT_SECRET=
+AZURE_CLIENT_ID=
+```
